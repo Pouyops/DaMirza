@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+    font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    width: 100%;
+    max-width: 480px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+#status {
+    font-size: 0.85em;
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 20px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1.5px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    direction: rtl;
+    transition: border-color 0.2s;
+    font-family: inherit;
+    background-color: #f8f9fa;
+}
+
+input:focus {
+    outline: none;
+    border-color: #212529;
+    background-color: #ffffff;
+}
+
+button#findBtn {
+    width: 100%;
+    padding: 14px;
+    background-color: #212529;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+button#findBtn:disabled {
+    background-color: #ced4da;
+    cursor: not-allowed;
+}
+
+button#findBtn:hover:not(:disabled) {
+    background-color: #343a40;
+}
+
+button#findBtn:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+#filterContainer {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+    background-color: #f8f9fa;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.filter-btn:hover {
+    background-color: #e9ecef;
+}
+
+.filter-btn.active {
+    background-color: #212529;
+    color: #ffffff;
+    border-color: #212529;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 12px;
+}
+
+li {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    font-size: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.check-icon {
+    font-size: 0.8em;
+}
